@@ -3,7 +3,7 @@
   
 
   color: #0d0b0a;
-  background-color: #f2fafa;
+
 
 
 
@@ -23,6 +23,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: #f2fafa;
 }
 
 main {
