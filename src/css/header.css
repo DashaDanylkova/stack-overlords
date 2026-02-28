@@ -1,0 +1,102 @@
+.page-header .container {
+    display: flex;
+    /* в одну лінію навігація + контакти */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
+    width: 113px;
+    height: 44px;
+    margin-right: 16px;
+}
+
+.burger-icon {
+    display: block;
+    color: #0d0b0a;;
+}
+
+.nav-list {
+    display: none;
+}
+
+.header-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+    padding: 14px 0;
+}
+
+.header-logo-icon {
+    display: block;
+}
+
+.join-btn {
+    white-space: nowrap;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding-block: 4px;
+    padding-inline: 20px;
+    width: 102px;
+    height: 34px;
+    background-color: #c2d9fc;
+    margin-left: 11.5px;
+
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+    line-height: 26px;
+    color: #0d0b0a;
+}
+
+@media screen and (min-width: 768px) {
+
+    .page-header {
+        gap: 32px;
+    }
+
+    .burger-btn {
+        align-items: flex-start;
+        width: 278px;
+    }
+
+    .header-logo {
+        display: flex;
+    }
+    
+    .box-join-btn {
+        align-items: flex-end;
+    }
+
+    .join-btn {
+        margin-left: 175px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1336px) {
+
+    .page-header {
+        gap: 32px;
+        justify-content: flex-start;
+    }
+
+    .burger-btn {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+            gap: 0px;
+    }
+}
