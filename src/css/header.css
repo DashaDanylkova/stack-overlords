@@ -1,23 +1,22 @@
-.page-header .container {
+ .header-container {
     display: flex;
-    /* в одну лінію навігація + контакти */
+     /* в одну лінію навігація + контакти */
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
+    background-color: #f2fafa;
 }
+
 
 .burger-btn {
     background-color: transparent;
     border: none;
-    padding: 10px 0;
-    width: 113px;
-    height: 44px;
-    margin-right: 16px;
+    padding: 0;
 }
 
 .burger-icon {
-    display: block;
+    display: flex;
     color: #0d0b0a;;
 }
 
@@ -26,16 +25,17 @@
 }
 
 .header-logo {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 0px;
-    padding: 14px 0;
+    gap: 0px;   
 }
 
-.header-logo-icon {
-    display: block;
+.box-join-btn {
+    padding: 15px 0;
 }
 
 .join-btn {
@@ -55,21 +55,33 @@
     
     line-height: 26px;
     color: #0d0b0a;
-}
+}  
+
 
 @media screen and (min-width: 768px) {
 
-    .page-header {
+    .header-container {
+        width: 704px;
+        padding-left: 32px;
+        padding-right: 32px;
         gap: 32px;
+    }
+
+    .box-button {
+        width: 278px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
     }
 
     .burger-btn {
         align-items: flex-start;
-        width: 278px;
+        
     }
 
     .header-logo {
-        display: flex;
+        padding: 18px 0;
     }
     
     .box-join-btn {
@@ -78,25 +90,63 @@
 
     .join-btn {
         margin-left: 175px;
-    }
+    } 
+
+    
 }
-
-
 
 
 @media screen and (min-width: 1336px) {
 
-    .page-header {
+    .header-container {
+        
+        width: 1312px;
         gap: 32px;
-        justify-content: flex-start;
+        padding-left: 64px;
+        padding-right: 64px; 
     }
 
     .burger-btn {
         display: none;
     }
 
-    .nav-list {
-        display: flex;
-            gap: 0px;
+    .header-nav {
+        display: block;
+        align-items: center;     
     }
+
+    .nav-list {
+        /* flex-direction: row;
+        display: flex;
+        gap: 32px; */
+        display: flex;
+        gap: 32px;
+        list-style: none;
+    }
+
+    .nav-link {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link.current {
+        border-bottom: 2px solid rgba(13, 11, 10, 0.5);
+        width: 89px;
+        height: 26px; 
+    }
+    
+    .current::after {
+        bottom: -1px;
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+       
 }
