@@ -106,12 +106,18 @@
   width: 295px;
   height: 46px;
   background-color: #c2d9fc;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .pricing-card-btn:hover {
   opacity: 0.5;
 }
 .pricing-card-btn:focus {
   opacity: 0.5;
+}
+.pricing-card-btn:active {
+  border: 1px solid #c2d9fc;
+  opacity: 1;
+  background-color: transparent;
 }
 .wide-card-btn {
   display: none;
