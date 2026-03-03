@@ -1,0 +1,261 @@
+ .header-container {
+    display: flex;
+     /* в одну лінію навігація + контакти */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.burger-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.burger-icon {
+    display: flex;
+    color: #0d0b0a;;
+}
+
+.nav-list {
+    display: none;
+}
+
+.logo {
+    align-items: center;
+    
+}
+
+.join-btn {
+    white-space: nowrap;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding-block: 4px;
+    padding-inline: 20px;
+    width: 102px;
+    height: 34px;
+    background-color: #c2d9fc;
+
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+    line-height: 26px;
+    color: #0d0b0a;
+    margin: 15px 0;
+}  
+
+
+@media screen and (min-width: 768px) {
+
+    .header-container {
+        gap: 32px;
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .burger-btn {
+        /* width: 278px; */
+        width: 100%;
+        height: 24px;
+    }
+
+    .logo {
+        margin: 18px 0;
+    }
+
+    .join-btn {
+        padding-block: 8px;
+        width: 105px;
+        height: 42px;
+        margin-left: 173px;
+    }
+}
+
+
+@media screen and (min-width: 1336px) {
+
+    .header-container {
+        max-width: 1336px;
+        padding-left: 12px;
+        padding-right: 12px; 
+    }
+
+    .burger-btn {
+        display: none;
+    }
+
+    .header-nav {
+        /* display: block; */
+        width: 582px;
+        align-items: center;     
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 26px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 32px;
+        display: flex;
+        list-style: none; 
+    }
+
+    .nav-link {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link.current {
+        border-bottom: 2px solid rgba(13, 11, 10, 0.5);
+        width: 89px;
+        height: 26px; 
+    }
+    
+    .current::after {
+        bottom: -1px;
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+    }
+
+    .logo {
+        margin: 18px 0;
+    }
+
+    .join-btn {
+        margin-left: 477px;
+    }
+
+    .join-btn:hover,
+    .join-btn:focus {
+        opacity: 0.5;
+        background-color: #c2d9fc;;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mobile {
+    display: flex;
+        /* в одну лінію навігація + контакти */
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 0px;
+    max-width: 375px;
+    height: 64px;
+}
+
+.modal-close {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    color: #0d0b0a;
+}
+
+.logo {
+    align-items: center;
+}
+
+.mobile-join {
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding-block: 4px;
+    padding-inline: 20px;
+    width: 105px;
+    height: 34px;
+    background-color: #c2d9fc;
+} 
+
+.mobile-join:hover,
+.mobile-join:focus {
+    opacity: 0.5;
+    background-color: #c2d9fc;
+}
+
+.mobile-nav-list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mobile-nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0d0b0a;
+}
+
+.mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding-block: 10px;
+    padding-inline: 24px;
+    width: 343px;
+    height: 46px;
+    background: #c2d9fc;
+
+    margin-top: 276px;
+}
+
+.mobile-btn:hover,
+.mobile-btn:focus {
+    opacity: 0.5;
+    background-color: #c2d9fc;
+    ;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-mobile{
+        padding-block: 0px;
+        padding-inline: 32px;
+        width: 768px;
+        height: 64px;
+    }
+
+    .mobile-btn {
+        width: 204px;
+        height: 46px;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .mobile-menu {
+        display: none;
+    }
+}
