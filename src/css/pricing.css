@@ -1,6 +1,7 @@
 /*---------------------pricing-------------------------*/
 .pricing {
   padding: 64px 0;
+  background-color: #f2fafa;
 }
 .pricing-title {
   display: flex;
