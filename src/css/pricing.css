@@ -107,6 +107,9 @@
   width: 295px;
   height: 46px;
   background-color: #c2d9fc;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pricing-card-btn:hover {
   opacity: 0.5;
