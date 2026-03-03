@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stack-overlords/assets/favicontrue-DsALclSH.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicontrue.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,79 +24,100 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="container header-container">
+  <div class="container header-container">
+    <button
+      type="button"
+      class="burger-btn"
+      data-menu-open
+      aria-label="open menu"
+    >
+      <svg class="burger-icon" width="24" height="24">
+        <use href="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4%206H20V8H4V6ZM4%2011H20V13H4V11ZM4%2016H20V18H4V16Z'%20fill='%230D0B0A'/%3e%3c/svg%3e"></use>
+      </svg>
+    </button>
 
-        <button type="button" class="burger-btn" data-menu-open aria-label="open menu">
-            <svg class="burger-icon" width="24" height="24">
-                <use href="../img/burger-menu.svg"></use>
-            </svg>
-        </button>
-        
-        <nav class="header-nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link current" href="./index.html">Yoga Classes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link current" href="./index.html">Yoga Classes</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
 
-        <div class="header-logo">
-        <svg class="logo"  width="84" height="23">
-          <use class="header-logo-icon" href="../img/logo.svg"></use>
-        </svg>
-        </div>
-
-        <a class="join-btn" href="#pricing">Join now</a>
+    <div class="header-logo">
+      <svg class="logo" width="84" height="23">
+        <use class="header-logo-icon" href="/stack-overlords/assets/logo-kMtnnv7q.svg"></use>
+      </svg>
     </div>
+
+    <a class="join-btn" href="#pricing">Join now</a>
+  </div>
 </header>
 
-
-
 <div class="mobile-menu is-open" data-menu>
-    <div class="container mobile-menu-container">
-
+  <div class="container mobile-menu-container">
     <div class="header-mobile">
-        <button class="modal-close" type="button" aria-label="Close modal" data-menu-close>
-            <svg class="mobile-menu-close-icon" width="24" height="24" aria-hidden="true">
-                <use href="../img/close-menu.svg"></use>
-            </svg>
-        </button>
+      <button
+        class="modal-close"
+        type="button"
+        aria-label="Close modal"
+        data-menu-close
+      >
+        <svg
+          class="mobile-menu-close-icon"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.192%206.34424L11.949%2010.5862L7.70697%206.34424L6.29297%207.75824L10.535%2012.0002L6.29297%2016.2422L7.70697%2017.6562L11.949%2013.4142L16.192%2017.6562L17.606%2016.2422L13.364%2012.0002L17.606%207.75824L16.192%206.34424Z'%20fill='%230D0B0A'/%3e%3c/svg%3e"></use>
+        </svg>
+      </button>
 
-        <div class="header-logo">
-            <svg class="logo" width="84" height="23">
-                <use class="header-logo-icon" href="../img/logo.svg"></use>
-            </svg>
-        </div>
-        <a class="mobile-join" href="#pricing">Join now</a>
+      <div class="header-logo">
+        <svg class="logo" width="84" height="23">
+          <use class="header-logo-icon" href="/stack-overlords/assets/logo-kMtnnv7q.svg"></use>
+        </svg>
+      </div>
+      <a class="mobile-join" href="#pricing">Join now</a>
     </div>
 
-        <nav class="mobile-nav">
-            <ul class="mobile-nav-list">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link current" href="./index.html"
+            >Yoga Classes</a
+          >
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#">Team</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#">Testimonials</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#">Pricing</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </nav>
 
-                <li class="mobile-nav-item">
-                    <a class="mobile-nav-link current" href="./index.html">Yoga Classes</a>
-                </li>
-                <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Team</a>
-                </li>
-                <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Testimonials</a>
-                </li>
-                <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Pricing</a>
-                </li>
-                <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-
-        <a class="mobile-btn" href="#pricing">Join now</a>
-    </div>
+    <a class="mobile-btn" href="#pricing">Join now</a>
+  </div>
 </div>
 <script src="./js/mobile-menu.js"></script>
+
 
     <main>
       <!-- Loads the specified .html file -->
