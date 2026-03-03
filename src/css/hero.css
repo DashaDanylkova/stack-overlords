@@ -47,6 +47,7 @@
     display: flex;
         align-items: center;
         justify-content: center;
+        max-width: 343px;
         background-color: #c2d9fc;
         border: 1px solid #c2d9fc;
         border-radius: 100px;
@@ -97,6 +98,10 @@
 .hero {
         padding-bottom: 24px;
     }
+
+ .hero-container {
+    padding: 0 32px;
+ }
 .hero-img {
     background-image: url(/img/hero.webp);
     max-width: 768px;
@@ -121,8 +126,19 @@
     flex-direction: row;
     gap: 16px;
 }
-
+.hero-link {
+    max-width: 113px;
+    white-space: nowrap;
+}
+.hero-links {
+    max-width: 128px;
+    white-space: nowrap;
  }
+
+
+
+
+
 @media screen and (min-width: 1336px) {
 
 .hero {
@@ -141,7 +157,7 @@
     flex-direction: row;
     gap:24px;
     margin-top: 80px;
-    
+    padding: 0 12px;
 }
 
 .main-title {
@@ -152,4 +168,5 @@
     flex-shrink: 0;
 }
 
+}
 }
