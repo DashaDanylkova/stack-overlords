@@ -78,7 +78,7 @@
   }
 
   .gallery-list {
-    grid-template-columns: repeat(2, 1fr);
+    flex-basis: calc((100% - 24px) / 2);
     gap: 24px;
     max-width: 704px;
     margin: 0 auto;
