@@ -1,6 +1,8 @@
 .footer {
 background: #dfebeb;
 padding: 48px 16px;
+display: flex;
+justify-content: center;
 }
 
 
@@ -10,20 +12,24 @@ padding: 48px 16px;
   justify-content: space-between;
   align-items: flex-start;
 border-radius: 16px;
+max-width: 375px;
+
 }
 
 
 .footer-box {
   background: #ffffff;
   border-radius: 32px;
-  width: 100%;
-  display: grid;
+  max-width: 343px;
+    display: flex;
+      flex-direction: column;
+      padding: 32px;
+      gap: 48px;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
-   margin-right: 250px;
        max-width: 600px;
     width: 100%;
 }
@@ -162,17 +168,6 @@ text-align: left;
 
 
 
-.footer-container {
-  width: 100%;
-  
-}
-
-  .footer-box {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 22px;
-    gap: 48px;
-  }
 
   .footer-text {
     font-size: 18px;
@@ -194,11 +189,13 @@ text-align: left;
 
   
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 .footer {
   padding: 40px 32px;
 }
-
+.footer-container { 
+  max-width: 768px;
+}
 
  .footer-left {
     max-width: 100%;
@@ -215,10 +212,7 @@ text-align: left;
 }
 
     .footer-box {
-    width: 100%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr ;
+    max-width: 704px;
     padding: 40px 32px;
   }
 
@@ -226,12 +220,17 @@ text-align: left;
     display: flex;
     flex-direction: row;
       gap: 16px;
+      justify-content: space-between;
   }
 
   .footer-form input {
     flex: 1;
+    max-width: 546px;
     padding: 14px 24px;
   }
+.footer-form button {
+  width: 78px;
+}
 
   .footer-links h4,
 .footer-social h4 {
