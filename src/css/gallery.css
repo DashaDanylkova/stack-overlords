@@ -2,7 +2,7 @@
 
 .gallery {
   background-color: #f2fafa;
-  padding: 64px 20px;
+  
 }
 
 .gallery-title {
@@ -43,8 +43,6 @@
 }
 
 .gallery-item {
-  width: 155px;
-  height: 155px;
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;

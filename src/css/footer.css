@@ -265,18 +265,18 @@ gap: 14px;
 @media  (min-width: 1158px) {
 
   .footer {
-background: #dfebeb;
+    display:block;
 padding: 64px;
 }
 
 .footer-container {
  padding: 0 32px;
-
+max-width: 100%;
  }
 
   .footer-box {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1312px;
   }
 
 
