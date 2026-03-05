@@ -147,9 +147,10 @@
   }
 
   .team-ul {
-    grid-template-columns: repeat(auto-fit, 340px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 24px;
+    max-width: 100%;
   }
 
   .liam-li,
@@ -192,9 +193,10 @@
   }
 
   .team-ul {
-    grid-template-columns: repeat(auto-fit, 421px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 24px;
+    max-width: 100%;
   }
 
   .liam-li,
