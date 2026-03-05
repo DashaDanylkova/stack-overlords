@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 375px;
-  width: 100%;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 .about {
   background: #dfebeb;
   padding: 48px 0;
@@ -88,10 +81,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .about {
     padding: 64px 0;
     background-color: #f2fafa;
@@ -128,10 +117,6 @@
   }
 }
 @media screen and (min-width: 1336px) {
-  .container {
-    max-width: 1336px;
-  }
-
   .about {
     padding: 96px 0;
   }
