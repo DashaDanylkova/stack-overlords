@@ -55,7 +55,7 @@
 .noah-li,
 .ava-li,
 .clark-li {
-  width: 343px;
+  max-width: 343px;
   background-color: inherit;
   border-radius: 16px;
   overflow: hidden;
